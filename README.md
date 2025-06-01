@@ -12,6 +12,11 @@ Ce projet explore différentes stratégies d’identification du locuteur, combi
 ### 50 Speakers Audio Data (Kaggle)
 - Base de données contenant 50 locuteurs distincts.
 - Enregistrements propres, adaptés aux modèles profonds.
+### LibriSpeech (Kaggle)
+- Base de données contenant 251 locuteurs distincts.
+- Environ 1000 heures d'enregistrements audio en anglais.
+- Compatible avec les principaux frameworks de deep learning .
+  
 
 ## Modèles Étudiés
 
@@ -29,7 +34,14 @@ Ce projet explore différentes stratégies d’identification du locuteur, combi
 
 #### LSTM
 - Motivation : les MFCC sont séquentiels → LSTM capture les dépendances temporelles.
-- Entrée : MFCCs en séquence temporelle.
+- Architecture :
+    * LSTM à une couche : architecture simple, plus rapide à entraîner.
+    * LSTM à deux couches : permet de modéliser des relations temporelles plus complexes.
+- Entrée : MFCCs en séquence temporelle (shape : temps × caractéristiques).
+#### Bi-LSTM
+- Motivation : Capturer le contexte passé et futur dans une séquence.
+- Architecture : BiLSTM (deux LSTM parallèles : avant et arrière).
+- Avantage : Fournit une vision plus complète de la séquence audio.
 
 ### Modèles Hybrides
 
