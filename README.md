@@ -47,10 +47,13 @@ Ce projet explore différentes stratégies d’identification du locuteur, combi
 Une application Flask simple a été développée pour une démonstration de reconnaissance du locuteur en temps réel. L’utilisateur peut téléverser un fichier audio (.wav), et le modèle retourne le locuteur prédit.
 
 ### Fonctionnalités :
-- Interface de téléversement audio
-- Extraction des MFCC côté serveur
-- Prédiction avec le modèle CNN2D
-- Affichage du nom du locuteur prédit
+- Interface de téléversement audio  
+- Extraction des MFCC côté serveur  
+- Prédiction avec le modèle CNN2D  
+- Affichage du nom du locuteur prédit  
+
+![Aperçu de l'application Flask](images/interface.jpeg)
+
 
 ---
 
