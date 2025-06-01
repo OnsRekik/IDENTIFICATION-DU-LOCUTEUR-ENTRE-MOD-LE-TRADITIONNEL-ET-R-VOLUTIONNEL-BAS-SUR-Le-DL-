@@ -55,5 +55,5 @@ Une application Flask simple a été développée pour une démonstration de rec
 ---
 
 ### Vous pouvez consulter la présentation dans ce lien :
-[[Insérer le lien ici](https://www.canva.com/design/DAGkz1NCJhQ/8CKwQhID4vG01Lq6bWDQ6g/view?utm_content=DAGkz1NCJhQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h35383e5990#45)]
+  [[Cliquez ici](https://www.canva.com/design/DAGkz1NCJhQ/8CKwQhID4vG01Lq6bWDQ6g/view?utm_content=DAGkz1NCJhQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h35383e5990#45)]
 
