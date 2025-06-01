@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Identification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Speaker Identification</h1>
+
+    <form method="post" enctype="multipart/form-data" onsubmit="showLoader()">
+        <input type="file" name="file" accept="audio/*" required>
+        <br>
+        <button type="submit">Predict Speaker</button>
+        
+        <!-- Loading Animation -->
+        <div id="loader" style="display: none;">
+            <p>Processing... Please wait.</p>
+            <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading...">
+        </div>
+        
+        <!-- Prediction result -->
+        {% if prediction %}
+            <div class="result">
+                <p>{{ prediction }}</p>
+            </div>
+        {% endif %}
+    </form>
+
+    <script>
+        function showLoader() {
+            document.getElementById("loader").style.display = "block";  // Show loading
+        }
+    </script>
+</body>
+</html>
